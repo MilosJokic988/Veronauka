@@ -1,0 +1,317 @@
+html, body {
+  height: 100%;
+  margin: 0; /* Uklanja margine koje mogu ometati pozadinu */
+ background-image: url('/Church.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Wrapper za ceo sadržaj */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Glavni sadržaj koji se širi */
+main {
+  flex: 1; /* Ovaj deo omogućava da se main proširi kako bi zauzeo prostor */
+}
+
+/* H1 naslovi */
+h2 {
+  color: #3b3b3b;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+/* P za citate */
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Stil za linkove */
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Dodaj padding i margine za sve stranice */
+.container {
+  padding: 20px;
+}
+
+/* Footer stilizacija */
+footer {
+  background-color: #3b3b3b;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: auto; /* Ovaj deo će gurati footer na dno */
+}
+
+/* Opšti stilovi za Navbar */
+.navbar-custom {
+  background-color: #343a40; /* Tamna pozadina */
+  padding: 10px 20px; /* Padding za bolji razmak */
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff !important; /* Bele boje za brand */
+  text-transform: uppercase; /* Svi tekstovi u velikim slovima */
+}
+
+.navbar-toggler-icon {
+  background-color: #fff; /* Belo dugme za toggle */
+}
+
+/* Stilovi za navigaciju */
+.navbar-nav {
+  font-size: 1.1rem; /* Veći font za bolju čitljivost */
+}
+
+.nav-link {
+  color: #ccc; /* Svetlo siva boja za linkove */
+  margin-right: 20px; /* Razmak između linkova */
+  text-decoration: none; /* Bez podvlačenja */
+  transition: all 0.3s ease; /* Animacija pri hoveru */
+}
+
+/* Stilizacija za hover */
+.nav-link:hover {
+  color: #fff; /* Bela boja na hover */
+  text-decoration: underline; /* Podvlačenje na hover */
+}
+
+/* Aktivni link (kada je link aktivan) */
+.nav-link.active {
+  color: #007bff; /* Plava boja za aktivni link */
+  font-weight: bold; /* Podebljan tekst */
+}
+
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+    margin-top: 10px; /* Još malo manji razmak */
+  }
+
+  .nav-link {
+    font-size: 1rem; /* Još manji font za uštedu prostora */
+    margin: 6px 0; /* Manji razmak između linkova */
+    padding: 4px 0; /* Manji padding vertikalno, i dalje tapabilno */
+  }
+
+  .navbar-custom {
+    padding: 6px 10px; /* Manji padding cele navbar */
+  }
+
+  .navbar-brand {
+    font-size: 1.3rem; /* Manja veličina brenda */
+  }
+
+  /* Potpuno uklanjanje margin-right na mobilnom */
+  .nav-link {
+    margin-right: 0 !important;
+  }
+}
+
+/* Stilizacija dugmeta */
+.btn-custom {
+  background-color: #3b3b3b;  /* Tamna boja pozadine */
+  color: #fff;  /* Bela boja teksta */
+  border-radius: 25px;  /* Zaobljeni uglovi */
+  padding: 12px 30px;  /* Veća visina i širina dugmeta */
+  font-size: 1.1rem;  /* Veći tekst na dugmetu */
+  text-transform: uppercase;  /* Svi tekstovi u velikim slovima */
+  transition: all 0.3s ease;  /* Glatka animacija pri hover */
+}
+
+.btn-custom:hover {
+  background-color: #5a5a5a;  /* Svetlija tamna boja pri hover */
+  color: #fff;  /* Održavanje bele boje teksta */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Blagi senka efekat pri hover */
+}
+
+.btn-custom:focus, .btn-custom:active {
+  outline: none;  /* Uklanjanje outline-a pri fokusu ili aktivaciji */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);  /* Dodavanje blage senke pri aktivaciji */
+}
+
+/* Centered content on the home page */
+.home-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh; /* Centriranje u sredini ekrana */
+  flex-direction: column;
+}
+
+/* Osnovna pozadina stranice */
+.home-page-container {
+  background-image: url('https://example.com/path-to-your-image.jpg'); /* Zameni sa linkom do tvoje slike */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Dodaje senku za tekst */
+  flex-direction: column;
+}
+
+.welcome-box {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Poluprovidna pozadina za tekst */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  animation: fadeIn 2s ease-out;
+}
+
+.description-text {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  animation: fadeIn 3s ease-out;
+}
+
+.explore-btn {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  background-color: #919692;
+  border-color: #3b3f3c;
+  color: #121213;
+}
+
+.explore-btn:hover {
+  background-color: #a6afa8;
+  border-color: #020202;
+}
+
+/* Animacija za fadeIn efekat */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobilna optimizacija za uređaje do 576px */
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .card-body p {
+    font-size: 1rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+
+  .welcome-text {
+    font-size: 1.8rem;
+  }
+
+  .description-text {
+    font-size: 1rem;
+  }
+
+  .explore-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .welcome-box {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+/* Optimizacija za uređaje između 577px i 768px */
+@media (min-width: 577px) and (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.6rem;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+  }
+
+  .welcome-text {
+    font-size: 2.2rem;
+  }
+
+  .description-text {
+    font-size: 1.1rem;
+  }
+
+  .explore-btn {
+    font-size: 1.1rem;
+    padding: 11px 22px;
+  }
+
+  .welcome-box {
+    width: 85%;
+    padding: 25px;
+  }
+}
+footer p {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  footer p {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}

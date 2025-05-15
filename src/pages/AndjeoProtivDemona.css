@@ -1,0 +1,118 @@
+.igrica-container {
+  text-align: center;
+  padding: 2rem;
+  background-color: #1e1e2f;
+  color: #ee0c0c;
+  min-height: 80vh;
+}
+
+.health-bars {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.health {
+  font-size: 1rem;
+}
+
+progress {
+  width: 150px;
+  height: 15px;
+  appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #00ff99;
+  border-radius: 5px;
+}
+
+.slike {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.lik {
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Efekat trešenja tokom borbe */
+.tresenje {
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(5px, -5px); }
+  50% { transform: translate(-5px, 5px); }
+  75% { transform: translate(5px, 5px); }
+  100% { transform: translate(0, 0); }
+}
+
+.borba-dugme,
+.restart-dugme {
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.borba-dugme {
+  background-color: #3e8e41;
+  color: #fff;
+}
+
+.borba-dugme:hover {
+  background-color: #2c6e2f;
+}
+
+.restart-dugme {
+  background-color: #4444aa;
+  color: #fff;
+}
+
+.restart-dugme:hover {
+  background-color: #333399;
+}
+
+.rezultat {
+  font-size: 1.3rem;
+  color: #ffd700;
+  margin-top: 1rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* ✨ Magično svetlo (aura) oko Anđela nakon pobede */
+@keyframes svetlost {
+  0% {
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.5);
+  }
+}
+
+.pobeda {
+  animation: svetlost 1.5s infinite;
+  border-radius: 50%;
+}

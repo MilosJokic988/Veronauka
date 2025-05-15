@@ -1,0 +1,81 @@
+/* Pozadina celokupne stranice */
+body {
+ 
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Stilizovanje luksuznih kartica sa većim dimenzijama */
+.card {
+  background-color: #1a1a1a;
+  border: 3px solid #d4af37;
+  border-radius: 12px;
+  padding: 20px; /* Povećan padding */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  width: 300px; /* Povećana širina kartice */
+  height: 320px; /* Povećana visina kartice */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  
+}
+
+/* Kartica zaglavlje */
+.card-header {
+  background-color: #333;
+  color: #f8f8f8;
+  font-size: 1.2rem; /* Blago povećan font */
+  padding: 12px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 3px solid #d4af37;
+  flex-shrink: 0;
+}
+
+/* Kartica telo */
+.card-body {
+  padding: 10px; /* Povećan padding */
+  font-size: 1.05rem; /* Blago povećan font */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+/* Kartica footer */
+.card-footer {
+  background-color: #333;
+  color: #f8f8f8;
+  font-size: 0.9rem; /* Blago povećan font */
+  text-align: right;
+  padding: 10px;
+  flex-shrink: 0;
+}
+
+/* Efekat pri hoveru */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  border-color: #d4af37;
+}
+
+/* Stilizovanje blok citata */
+blockquote {
+  font-size: 1rem;
+  font-style: italic;
+  color: #ffffff;
+  line-height: 1.6;
+  margin: 5px 0;
+  text-align: left;
+}
+
+/* Razmak između kartica */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
